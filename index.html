@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAND HERO - AI Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>✋ HAND HERO</h1>
+    <p>AI와 함께하는 손동작 게임!</p>
+
+    <section class="info">
+      <div>점수 <span id="score">0</span></div>
+      <div>시간 <span id="time">60</span>초</div>
+    </section>
+
+    <video id="camera" autoplay playsinline></video>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div class="controls">
+      <button id="startButton">게임 시작</button>
+    </div>
+
+    <p id="message">게임 시작 버튼을 눌러주세요!</p>
+  </main>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
